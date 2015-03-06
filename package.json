@@ -7,7 +7,9 @@
     "request": "2.53.0",
     "express": "4.x"
   },
-  "bin": "./server.js", 
+  "bin": {
+	  "jenkins-coverage-badge": "./server.js"
+  },
   "scripts": {
     "start": "node server.js"
   },
