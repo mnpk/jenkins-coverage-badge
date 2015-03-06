@@ -1,12 +1,32 @@
 {
-	"name": "jenkins-coverage-badge",
-	"description": "crate shield.io badge from jenkins cobertura coverage",
-	"version": "0.1.0",
-	"private": true,
-	"main": "server.js",
-	"dependencies": {
-		"request": "2.53.0",
-		"express": "4.x"
-	}
+  "name": "jenkins-coverage-badge",
+  "description": "crate shield.io badge from jenkins cobertura coverage",
+  "version": "0.1.0",
+  "private": true,
+  "main": "server.js",
+  "dependencies": {
+    "request": "2.53.0",
+    "express": "4.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mnpk/jenkins-coverage-badge.git"
+  },
+  "keywords": [
+    "jenkins",
+    "badge",
+    "coverage",
+    "cobertura",
+    "shield.io"
+  ],
+  "author": "mnpk <mnncat@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnpk/jenkins-coverage-badge/issues"
+  },
+  "homepage": "https://github.com/mnpk/jenkins-coverage-badge"
 }
-
