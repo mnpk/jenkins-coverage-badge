@@ -29,12 +29,24 @@ app.get('/jenkins/c/http/*', function(req,res) {
 					request(badge_url, function(err, response, body) {
 						if (!err & response.statusCode == 200) {
 							res.send(body)
+						} else {
+							res.send(500)
 						}
 					})
 				}
 			}
 		} else {
 			console.log(err)
+			var badge_url = 'https://img.shields.io/badge/coverage-none-lightgrey.svg'
+			console.log('[GET] ' + '/jenkins/c/http/' + jurl)
+			console.log('      generating badge(' + badge_url + ')')
+			request(badge_url, function(err, response, body) {
+				if (!err & response.statusCode == 200) {
+					res.send(body)
+				} else {
+					res.send(500)
+				}
+			})
 		}
 	})
 })
