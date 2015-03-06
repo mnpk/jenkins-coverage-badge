@@ -24,6 +24,8 @@ app.get('/jenkins/c/http/*', function(req,res) {
 						}
 					}(cov)
 					var badge_url = 'https://img.shields.io/badge/coverage-' + cov.toString() + '%-' + color + '.svg'
+                    console.log('[GET] ' + '/jenkins/c/http/' + jurl)
+                    console.log('      generating badge(' + badge_url + ')')
 					request(badge_url, function(err, response, body) {
 						if (!err & response.statusCode == 200) {
 							res.send(body)
@@ -39,8 +41,6 @@ app.get('/jenkins/c/http/*', function(req,res) {
 
 var port = process.argv.slice(2)[0];
 if (!port) port = 9913
-console.log(port)
-
 var server = app.listen(port, function() {
-  console.log('Listening on port %d', server.address().port)
+  console.log('Listening on port %d...', server.address().port)
 })
