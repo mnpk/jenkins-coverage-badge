@@ -2,7 +2,7 @@
 
 Generate test-coverage badge from your Jenkins!
 
-*(Using [shields.io](shields.io))*
+*(Using [shields.io](http://shields.io))*
 
 
 ## Install & Run
