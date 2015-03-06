@@ -1,13 +1,13 @@
 # jenkins-coverage-badge
 
-Generate test-coverage badge from your Jenkins!
+The MISSING [shields.io](http://shields.io) badge, Jenkins-coverage.
 
-*(Using [shields.io](http://shields.io))*
+This tiny web server will generate your Jenkins-code-coverage badge!
 
 
 ## Install & Run
 ```bash
-# install globally
+# install
 $ npm install -g jenkins-coverage-badge
 
 # run with port number (default: 9913)
