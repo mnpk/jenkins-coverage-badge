@@ -4,19 +4,28 @@ Generate test-coverage badge from your Jenkins!
 
 *(Using [shields.io](shields.io))*
 
-![screenshot](https://raw.githubusercontent.com/mnpk/jenkins-coverage-badge/master/screenshot.png)
 
 ## Install & Run
-```
+```bash
+# install globally
 $ npm install -g jenkins-coverage-badge
-$ jcb 9090
-Listening on port 9090...
+
+# run with port number (default: 9913)
+$ jcb 80
+Listening on port 80...
 
 ```
 
 Now you can get coverage badge with,
 
-`http://host:port/jenkins/c/http/:your_jenkins_url/job/:job`
+`http://host:port/jenkins/c/http/:jenkins_url/job/:job`
 
+## Example
+
+![coverage](http://www.mnpk.org/jenkins/c/http/d7.mnpk.org/jenkins/job/adm)
+```
+![coverage](http://www.mnpk.org/jenkins/c/http/d7.mnpk.org/jenkins/job/adm)
+```
+ 
 ## License
 MIT
