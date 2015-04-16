@@ -24,6 +24,10 @@ app.get('/jenkins/c/http/*', function(req,res) {
 						}
 					}(cov)
 					var badge_url = 'https://img.shields.io/badge/coverage-' + cov.toString() + '%-' + color + '.svg'
+					var style = req.param("style")
+					if (typeof style != 'undefined') {
+						badge_url += '?style=' + style
+					}
                     console.log('[GET] ' + '/jenkins/c/http/' + jurl)
                     console.log('      generating badge(' + badge_url + ')')
 					res.redirect(badge_url)
