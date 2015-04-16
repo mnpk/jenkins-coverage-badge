@@ -23,9 +23,9 @@ Now you can get coverage badge with,
 
 ## Example
 
-![coverage](http://www.mnpk.org/jenkins/c/http/d7.mnpk.org/jenkins/job/adm?style=flat-square)
+![coverage](http://www.mnpk.org/jenkins/c/http/d7.mnpk.org/jenkins/job/goyo?style=flat-square)
 ```
-![coverage](http://www.mnpk.org/jenkins/c/http/d7.mnpk.org/jenkins/job/adm?style=flat-square)
+![coverage](http://www.mnpk.org/jenkins/c/http/d7.mnpk.org/jenkins/job/goyo?style=flat-square)
 ```
  
 ## License
