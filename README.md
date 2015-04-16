@@ -4,6 +4,7 @@ The MISSING [shields.io](http://shields.io) badge, Jenkins-coverage.
 
 This tiny web server will generate your Jenkins-code-coverage badge!
 
+[![npm](https://img.shields.io/npm/v/jenkins-coverage-badge.svg?style=flat-square)]()
 
 ## Install & Run
 ```bash
