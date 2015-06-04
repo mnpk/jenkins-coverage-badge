@@ -1,7 +1,7 @@
 {
   "name": "jenkins-coverage-badge",
   "description": "crate shield.io badge from jenkins cobertura coverage",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "server.js",
   "dependencies": {
     "request": "2.53.0",
