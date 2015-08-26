@@ -17,9 +17,10 @@ Listening on port 80...
 
 ```
 
-Now you can get coverage badge with,
+Now you can get a coverage badge from jacoco or cobertura coverage reports with,
 
-`http://host:port/jenkins/c/http/:jenkins_url/job/:job`
+`http://host:port/jenkins/jacoco/:jenkins_url/job/:job`
+`http://host:port/jenkins/cobertura/:jenkins_url/job/:job`
 
 ## Example
 
