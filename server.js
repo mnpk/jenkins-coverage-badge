@@ -5,9 +5,10 @@ var express = require('express')
 
 var app = express()
 
-app.get('/jenkins/c/http/*', function(req,res) {
+app.get('/jenkins/c/:proto/*', function(req,res) {
+  var proto = req.params.proto
   var jurl = req.params[0]
-  var url = 'http://' + jurl + '/lastSuccessfulBuild/cobertura/api/json/?depth=2'
+  var url = proto + '://' + jurl + '/lastSuccessfulBuild/cobertura/api/json/?depth=2'
   request(url, function(err, response, body) {
     if (!err && response.statusCode == 200) {
       var elements = JSON.parse(body)['results']['elements']

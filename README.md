@@ -21,12 +21,14 @@ Now you can get coverage badge with,
 
 `http://host:port/jenkins/c/http/:jenkins_url/job/:job`
 
+You may swap out `http` in the URL with `https` if the Jenkins server is only accessible over an HTTPS connection.
+
 ## Example
 
 ![coverage](http://d7.mnpk.org/jcb/jenkins/c/http/d7.mnpk.org/jenkins/job/goyo?style=flat-square)
 ```
 ![coverage](http://d7.mnpk.org/jcb/jenkins/c/http/d7.mnpk.org/jenkins/job/goyo?style=flat-square)
 ```
- 
+
 ## License
 MIT
