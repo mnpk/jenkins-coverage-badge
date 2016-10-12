@@ -17,16 +17,15 @@ Listening on port 80...
 
 ```
 
-Now you can get coverage badge with,
+Now you can get a coverage badge from **Jacoco** or **Cobertura** coverage reports with,
 
-`http://host:port/jenkins/c/http/:jenkins_url/job/:job`
+`http://host:port/jenkins/jacoco/:jenkins_url/job/:job`
 
-## Example
+`http://host:port/jenkins/cobertura/:jenkins_url/job/:job`
 
-![coverage](http://d7.mnpk.org/jcb/jenkins/c/http/d7.mnpk.org/jenkins/job/goyo?style=flat-square)
-```
-![coverage](http://d7.mnpk.org/jcb/jenkins/c/http/d7.mnpk.org/jenkins/job/goyo?style=flat-square)
-```
- 
+**For https**, simply add the protocol to the URL as follows:
+
+`http://host:port/jenkins/jacoco/https/:jenkins_url/job/:job`
+
 ## License
 MIT
