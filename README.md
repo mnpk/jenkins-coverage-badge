@@ -23,5 +23,9 @@ Now you can get a coverage badge from jacoco or cobertura coverage reports with,
 
 `http://host:port/jenkins/cobertura/:jenkins_url/job/:job`
 
+For https, simply add the protocol to the URL as follows:
+
+`http://host:port/jenkins/jacoco/https/:jenkins_url/job/:job`
+
 ## License
 MIT
